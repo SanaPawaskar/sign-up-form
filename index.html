@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>sign-up Form | the Odin Project</title>
+</head>
+<body>
+    <div class="container">
+    <aside class="left-div">
+        <div class="logo">
+            <img src="src/assets/images/odin-lined.png" alt="The Odin Project logo">
+            <span>ODIN</span>
+          </div>
+        <p class="attribution">
+            Photo by
+            <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie
+              West</a>
+            on
+            <a
+              href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+          </p>
+    </aside>
+    <main class="right-div">
+        <h3>
+            This is not a real online service! You know you need something like this in your life
+            to help you realize your deepest dreams.
+            <br>
+            Sign up <em>now</em> to get started.
+            <br><br>
+            You <em>know</em> you want to.
+          </h3>
+          <section id="fields">
+            <h2>Let's do this!</h2>
+    
+            <div class="form-div">
+              <p>
+                <label for="first-name">FIRST NAME</label><br>
+                <input type="text" name="first-name" id="first-name" size="25" required autocomplete>
+              </p>
+    
+              <p>
+                <label for="last-name">LAST NAME</label><br>
+                <input type="text" name="last-name" id="last-name" size="25" required autocomplete>
+              </p>
+    
+              <p>
+                <label for="email">EMAIL</label><br>
+                <input type="email" name="email" id="email" size="25" required autocomplete>
+              </p>
+    
+              <p>
+                <label for="phone-number">PHONE NUMBER</label><br>
+                <input type="tel" name="phone-number" id="phone-number" size="25" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  placeholder="xxx-xxx-xxxx" autocomplete>
+              </p>
+    
+              <p>
+                <label for="password">PASSWORD</label><br>
+                <input type="password" name="password" id="password" size="25" 
+                required aria-describedby="password-validation">
+                <br>
+                <span class="invalid-message" id="password-validation" hidden>* Passwords do not match</span>
+              </p>
+    
+              <p>
+                <label for="password-confirm">CONFIRM PASSWORD</label><br>
+                <input type="password" name="password-confirm" id="password-confirm" size="25" required>
+              </p>
+            </div>
+          </section>
+    
+        <button class="subt-btn">Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
+    </main>
+    </div>
+</body>
+</html>
